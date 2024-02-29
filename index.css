@@ -327,27 +327,16 @@ h2 {
 
 	.skill-animated & {
 		animation: progress 1s linear forwards;
-		-webkit-animation: progress 1s linear forwards;
 	}
 }
 
 @keyframes progress {
 	from {
-		-webkit-width: 0%;
+		width: 0%;
 	}
 
 	to {
-		-webkit-width: var(--percentage);
-	}
-}
-
-@-webkit-keyframes progress {
-	from {
-		-webkit-width: 0%;
-	}
-
-	to {
-		-webkit-width: var(--percentage);
+		width: var(--percentage);
 	}
 }
 
