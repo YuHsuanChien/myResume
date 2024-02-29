@@ -326,16 +326,19 @@ h2 {
 	background-image: var(--bg);
 
 	.skill-animated & {
-		animation: progress 1s linear forwards
+		animation: progress 1s linear forwards;
+		-webkit-animation: progress 1s linear forwards;
 	}
 }
 
 @keyframes progress {
 	from {
+		-webkit-width: 0%;
 		width: 0%;
 	}
 
 	to {
+		-webkit-width: var(--percentage);
 		width: var(--percentage);
 	}
 }
