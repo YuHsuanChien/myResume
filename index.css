@@ -1,0 +1,778 @@
+:root {
+	font-size: 16px;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	letter-spacing: 2px;
+	scroll-margin-top: 5rem;
+	/* scroll-margin-top 屬性允許你定義在確定滾動捲動區域時，元素的頂部應考慮多少空間（邊距） */
+}
+
+a {
+	text-decoration: none;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+}
+
+.section-container {
+	width: 100%;
+	margin: 30px auto;
+}
+
+.container {
+	margin: 30px auto;
+	width: 100%;
+	display: flex;
+}
+
+/*SECTION 全域 */
+body {
+	background-color: #353353;
+	scroll-behavior: unset !important;
+}
+
+.nav-list > ul > li {
+	width: 100%;
+	text-align: center;
+	border-bottom: 1px solid white;
+	font-weight: 700;
+}
+
+.navbar {
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	z-index: 2;
+	background-image: linear-gradient(to right top, #302f4d, #332647, #371c3f, #3b0f35, #3d0028);
+	box-shadow: 1px 1px 15px 2px black;
+}
+
+#navbar > .logo > a {
+	color: white;
+	font-weight: 900;
+	font-size: 30px;
+}
+
+.nav-list {
+	width: 100%;
+}
+
+.nav-list-icon {
+	background-color: transparent;
+	border-color: white;
+	border-radius: 7px;
+	width: 40px;
+	height: 40px;
+}
+
+.nav-list-icon > i {
+	color: white;
+}
+
+.nav-list > ul > li:last-child {
+	border-bottom: 0;
+}
+
+.nav-list-icon {
+	padding: 2px 6px;
+}
+
+.b {
+	width: 100px;
+	height: 100px;
+}
+
+.red {
+	background-color: red;
+}
+
+.blue {
+	background-color: blue;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.nav-list {
+	display: none;
+}
+
+h2 {
+	width: 80%;
+	line-height: 35px;
+	font-weight: 700;
+	margin: 20px auto;
+	text-align: center;
+	letter-spacing: 2px;
+	color: white;
+}
+
+/*SECTION banner */
+#Banner {
+	margin-top: 100px;
+	margin-bottom: 400px;
+}
+
+#Banner > .section-container {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.Banner-photo {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.Banner-photo > img {
+	width: 40%;
+}
+
+#Banner .description {
+	width: 100%;
+	font-weight: 900;
+	font-size: 3.125rem;
+	color: white;
+	line-height: 70px;
+	flex-direction: column;
+	text-align: center;
+}
+
+#Banner .description > p:first-child {
+	font-size: 2.0625rem;
+	line-height: 2.0625rem;
+}
+
+#Banner .description > p:last-child {
+	font-size: 1rem;
+	line-height: 1.25rem;
+	letter-spacing: 1px;
+}
+
+#Banner .description > p {
+	margin: 20px auto;
+}
+
+#Banner .social {
+	display: flex;
+	justify-content: space-between;
+	font-size: 1.875rem;
+	width: 40%;
+}
+
+#Banner .social > li > a {
+	color: whitesmoke;
+}
+
+.scrollDown {
+	margin-top: 150px;
+}
+
+.scrollDown p {
+	color: white;
+}
+
+.scrollDown i {
+	color: white;
+}
+
+#Banner .scrollDown > a {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#Banner .scrollDown {
+	animation: move 0.8s linear infinite alternate;
+}
+
+@keyframes move {
+	from {
+		transform: translateY(2px);
+		opacity: 1;
+	}
+
+	to {
+		transform: translateY(-2px);
+		opacity: 0;
+	}
+}
+
+/* SECTION AboutMe區塊樣式 */
+#AboutMe {
+	width: 100%;
+	margin: 30px auto;
+}
+
+#AboutMe > .section-container {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+#AboutMe .my-photo {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+#AboutMe .my-photo > img {
+	width: 50%;
+	height: auto;
+	object-fit: cover;
+}
+
+#AboutMe > .AboutMe-pic-item {
+	width: 100%;
+}
+
+#AboutMe > .AboutMe-pic-item > .AboutMe-item {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#AboutMe > .AboutMe-pic-item > .AboutMe-item > .description {
+	width: 90%;
+	line-height: 30px;
+	padding: 15px;
+	background-color: #302F4D;
+	border-radius: 20px;
+	margin: 30px auto;
+	letter-spacing: 2px;
+	color: white;
+}
+
+#AboutMe .content {
+	width: 100%;
+	color: white;
+}
+
+/*SECTION 學歷 */
+.educational-background {
+	width: 90%;
+	margin: 100px auto;
+}
+
+.educational-background > .item {
+	width: 100%;
+	background-color: #4e519e;
+	border-radius: 15px;
+	margin-bottom: 30px;
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	letter-spacing: 1px;
+}
+
+.educational-background > .item > .title {
+	font-size: 1.375rem;
+	font-weight: 700;
+}
+
+.educational-background > .item > .ps {
+	width: 100%;
+	display: flex;
+	line-height: 50px;
+}
+
+/*SECTION 技能 */
+#AboutMe .content > .skill {
+	width: 90%;
+	display: flex;
+	flex-direction: column;
+	margin: 100px auto;
+}
+
+#AboutMe .skill-item .schedule-content {
+	position: relative;
+}
+
+.skill .schedule {
+	width: 100%;
+	height: 15px;
+	background-color: white;
+	border-radius: 10px;
+	box-shadow: 2px 2px 2px black;
+	margin-bottom: 10px
+}
+
+.skill .schedule-index {
+	width: 0;
+	height: 15px;
+	border-radius: 10px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	font-size: .625rem;
+	font-weight: 500;
+	text-align: center;
+	text-shadow: 2px 2px 2px black;
+	overflow: hidden;
+}
+
+.skillbar {
+	background-image: var(--bg);
+
+	.skill-animated & {
+		animation: progress 1s linear forwards
+	}
+}
+
+@keyframes progress {
+	from {
+		width: 0%;
+	}
+
+	to {
+		width: var(--percentage);
+	}
+}
+
+/* SECTION 經歷 */
+.experience {
+	width: 90%;
+	display: flex;
+	flex-direction: column;
+	margin: 100px auto;
+}
+
+.experience-total {
+	display: flex;
+	flex-direction: column;
+}
+
+.experience-total > .item {
+	display: flex;
+	flex-wrap: wrap;
+	border-bottom: 1px solid white;
+	padding-bottom: 25px;
+}
+
+.experience-total > .item .date {
+	width: 100%;
+	line-height: 40px;
+	margin-top: 20px;
+}
+
+.experience-total > .item .company-logo {
+	line-height: 40px;
+	width: 80%;
+}
+
+.experience-total > .item .company-position {
+	line-height: 40px;
+}
+
+/* SECTION 作品集 */
+#Portfolio {
+	width: 90%;
+	background-color: #302F4D;
+	padding-top: 30px;
+	padding-bottom: 15px;
+	border-radius: 15px;
+	margin: 100px auto;
+}
+
+.section-title {
+	width: 80%;
+	font-weight: 700;
+	line-height: 35px;
+	margin: 10px auto;
+	text-align: center;
+	color: white;
+}
+
+#Portfolio .container {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+	gap: 10px;
+}
+
+.card {
+	position: relative;
+	height: 100%;
+	transform-style: preserve-3d;
+	transition: all 0.6s;
+	background-color: transparent;
+	border: none;
+	perspective: 50rem;
+	will-change: transform;
+}
+
+.card:hover {
+	transform: rotateY(180deg);
+}
+
+.side {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+	backface-visibility: hidden;
+}
+
+.card img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.back {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: blueviolet;
+	transform: rotateY(-180deg);
+	backface-visibility: hidden;
+}
+
+.fit {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.card:nth-child(3) {
+	grid-area: 1 / 3 / 2 / 5;
+}
+
+.card:nth-child(6) {
+	grid-area: 2 / 2 / 4 / 4;
+	height: 370px;
+}
+
+.card:nth-child(8) {
+	grid-area: 2 / 4 / 3 / 6;
+}
+
+/* SECTION contact us */
+#contactUs {
+	width: 100%;
+	display: flex;
+	margin: 30px auto;
+	margin-bottom: 0px;
+	justify-content: center;
+	background-image: linear-gradient(to right top, #a6a2f8, #8886d9, #6b6bbb, #4e519e, #303882);
+	padding: 100px 0;
+}
+
+#contactUs > .contactUs-total > .content,
+.contact-form {
+	width: 80%;
+	color: white;
+}
+
+#contactUs > .contactUs-total {
+	width: 80%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#contactUs > .contactUs-total > .content > h2 {
+	text-align: start;
+	margin: 10px 0;
+}
+
+#contactUs > .contactUs-total > .content > ul {
+	margin: 20px 0;
+	letter-spacing: .0313rem;
+	line-height: 25px;
+}
+
+#contactUs > .contactUs-total > .content > ul > .inf {
+	display: flex;
+	justify-content: start;
+	align-items: center;
+	line-height: 30px;
+}
+
+#contactUs > .contactUs-total > .content > ul > .inf > i {
+	margin-right: 10px;
+}
+
+.contact-from {
+	width: 80%;
+	background-color: white;
+	padding: 25px 20px;
+	border-radius: 15px;
+}
+
+.contact-from > button {
+	background-image: linear-gradient(to right top, #845ec2, #906dc6, #9c7dc9, #a88ccd, #b39cd0);
+	border: none;
+}
+
+footer {
+	background-color: black;
+	text-align: center;
+	color: white;
+	opacity: 0.5;
+	font-size: .75rem;
+}
+
+textarea {
+	width: 100%;
+	height: 100px;
+}
+
+/* SECTION 手機版本 */
+@media screen and (max-width: 767px) {
+	#Portfolio .container {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+	.card {
+		width: 48%;
+		height: 200px;
+		max-height: 100%;
+		border: none;
+		background-color: transparent;
+	}
+
+	.card:nth-child(6) {
+		height: auto;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	:root {
+		font-size: 18px;
+	}
+
+	/* SECTION 平板nav區塊 */
+	#navbar {
+		padding: 10px 80px !important;
+	}
+
+	#navbar > .logo > a {
+		font-size: 2.5rem;
+	}
+
+	.nav-list-icon {
+		display: none;
+	}
+
+	.nav-list {
+		width: 50%;
+		display: flex !important;
+		justify-content: space-between;
+	}
+
+	#change {
+		flex-direction: row !important;
+		flex-wrap: nowrap;
+		border: none;
+		width: 100%;
+		justify-content: space-between;
+	}
+
+	#change > li {
+		border: none;
+	}
+
+	/* SECTION 平板banner區塊 */
+	.Banner-photo > img {
+		width: 30%;
+	}
+
+	#Banner .social {
+		width: 20%;
+	}
+
+	/* SECTION 平板About me區塊 */
+	#AboutMe .my-photo {
+		width: 30%;
+	}
+
+	#AboutMe .my-photo > img {
+		width: 100%;
+		margin: 0;
+	}
+
+	#AboutMe > .AboutMe-pic-item > .AboutMe-item {
+		width: 40%;
+	}
+
+	#AboutMe > .AboutMe-pic-item {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	#AboutMe > .AboutMe-pic-item > .AboutMe-item > .description {
+		margin: 20px auto;
+	}
+
+	.AboutMe-item > h2 {
+		margin: 10px auto;
+		line-height: 50px;
+	}
+
+	/* SECTION 平板E-B區塊 */
+	.educational-background {
+		width: 80%;
+	}
+
+	/* SECTION 平板Skills區塊 */
+	#AboutMe .content > .skill {
+		width: 80%;
+	}
+
+	/* SECTION 平板Experience區塊 */
+	.experience {
+		width: 80%;
+	}
+
+	/* SECTION 平板contact us區塊 */
+	#contactUs > .contactUs-total {
+		flex-direction: row;
+		justify-content: center;
+		align-items: start;
+		width: 90%;
+	}
+
+	#contactUs > .contactUs-total > .content {
+		width: 35%;
+		margin-right: 20px;
+		display: flex;
+		flex-direction: column;
+		justify-content: start;
+	}
+
+	#contactUs .contact-from {
+		width: 45%;
+		box-shadow: 5px 10px 30px 10px rgba(0, 0, 0, 0.5);
+	}
+
+	#contactUs > .contactUs-total > .content > h2 {
+		width: 80%;
+		margin-bottom: 30px;
+		margin-top: 0;
+	}
+
+	#contactUs > .contactUs-total > .content > ul {
+		width: 80%;
+		margin-bottom: 30px;
+	}
+
+	#contactUs > .contactUs-total > .content > p {
+		width: 80%;
+		margin-bottom: 30px;
+	}
+}
+
+@media screen and (min-width: 1026px) {
+	:root {
+		font-size: 18px;
+	}
+
+	/* SECTION 電腦nav區塊 */
+	#navbar {
+		justify-content: center;
+		align-items: center;
+	}
+
+	#navbar > .logo {
+		margin-right: 200px;
+	}
+
+	.nav-list {
+		width: 30%;
+		display: flex;
+	}
+
+	#change > li {
+		width: auto;
+	}
+
+	/* SECTION 電腦banner區塊 */
+	.Banner-photo > img {
+		width: 20%;
+	}
+
+	#Banner .social {
+		width: 15%;
+		justify-content: center;
+	}
+
+	#Banner .social > li {
+		margin-right: 30px;
+	}
+
+	#Banner .social > li:last-child {
+		margin-right: 0;
+	}
+
+	/* SECTION 電腦AboutMe區塊 */
+	#AboutMe > .AboutMe-pic-item {
+		width: 60%;
+		margin: auto;
+	}
+
+	#AboutMe > .AboutMe-pic-item > .AboutMe-item {
+		width: 60%;
+	}
+
+	/* SECTION 電腦E-B區塊 */
+	.educational-background {
+		width: 50%;
+		margin: 200px auto;
+	}
+
+	/* SECTION 電腦E-B區塊 */
+	#AboutMe .content > .skill {
+		width: 50%;
+		margin: 200px auto;
+	}
+
+	.skill .schedule {
+		height: 20px;
+	}
+
+	.skill .schedule-index {
+		height: 20px;
+	}
+
+	/* SECTION 電腦Experience區塊 */
+	.experience {
+		width: 50%;
+		margin: 200px auto;
+	}
+
+	/* SECTION 電腦Portfolio區塊 */
+	#Portfolio {
+		width: 70%;
+		padding-left: 30px;
+		padding-right: 30px;
+		margin: 200px auto;
+	}
+
+	/* SECTION 電腦contact us區塊 */
+	#contactUs > .contactUs-total {
+		width: 65%;
+	}
+
+	@media screen and (min-width: 1920px) {
+		:root {
+			font-size: 20px;
+		}
+	}
+}

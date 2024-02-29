@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta
+		name="viewport"
+		content="width=device-width, initial-scale=1.0"
+	/>
+	<title>My Resume</title>
+
+	<link
+		rel="stylesheet"
+		href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css
+  "
+	/>
+	<link
+		rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css
+  "
+	/>
+	<link
+		rel="stylesheet"
+		href="./index.css"
+	/>
+</head>
+
+<body
+	data-bs-spy="scroll"
+	data-bs-target="#navbar"
+>
+	<!-- SECTION header -->
+	<nav
+		id="navbar"
+		class="navbar bg-body-tertiary p-3  mb-3 d-flex position-fixed w-100"
+	>
+		<div class="logo">
+			<a
+				class="navbar-brand me-0"
+				href="#"
+			>Jackall</a>
+		</div>
+		<button class="nav-list-icon"><i class="fa-solid fa-bars"></i></button>
+		<div class="nav-list">
+			<ul
+				id="change"
+				class="nav nav-pills d-flex flex-column align-items-center"
+			>
+				<li class="nav-item">
+					<a
+						class="nav-link px-2 text-white"
+						href="#AboutMe"
+					>AboutMe</a>
+				</li>
+				<li class="nav-item">
+					<a
+						class="nav-link px-2 text-white"
+						href="#Portfolio"
+					>Portfolio</a>
+				</li>
+				<li class="nav-item">
+					<a
+						class="nav-link px-2 text-white"
+						href="#contactUs"
+					>ContactMe</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<div
+		class="scrollspy-example pt-3  rounded-2"
+		tabindex="0"
+	>
+		<!-- SECTION Banner -->
+		<section id="Banner">
+			<div class="section-container">
+				<div class="Banner-photo">
+					<img src="./img/avataaars.png" />
+				</div>
+				<div class="description">
+					<p>Jackall</p>
+					<p>I'm a Front-end engineer</p>
+				</div>
+				<ul class="social">
+					<li class="ig"><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+					<li class="fb"><a href="#"><i class="fa-brands fa-square-facebook"></i></a></li>
+					<li class="github"><a href="#"><i class="fa-brands fa-github"></i></a></li>
+				</ul>
+				<div class="scrollDown">
+					<a href="#AboutMe">
+						<p>active</p>
+						<i class="fa-solid fa-arrow-down"></i>
+					</a>
+				</div>
+			</div>
+		</section>
+
+		<!-- SECTION AboutMe -->
+
+		<section
+			class="section-container"
+			id="AboutMe"
+		>
+			<div class="AboutMe-pic-item">
+				<div class="my-photo"><img
+						src="./img/大頭貼.png"
+						alt=""
+					/>
+				</div>
+				<div class="AboutMe-item">
+					<h2>完善每個作品是我的原則</h2>
+					<div class="description">我來自嘉義，目前預備前端工程師，之前在外工作時就曾參與網頁製作，也曾經為自家水果使用wordpress架過一個能夠購物的網站，來到資展學習後對前端網站有了深入的體會，目前擅長HTML、CSS、JS、bootstrap</div>
+				</div>
+			</div>
+
+			<div class="content">
+				<!-- 學歷 -->
+				<div class="educational-background">
+					<h2>E-B</h2>
+					<div class="item">
+						<div class="title">企業管理系學士學位</div>
+						<div class="ps">
+							<p class="school">國立屏東科技大學 | 2014-2018</p>
+						</div>
+
+					</div>
+					<div class="item">
+						<div class="title">商業服務系</div>
+						<div class="ps">
+							<p>國立華南高級商業職業學校 | 2011-2014</p>
+						</div>
+
+					</div>
+				</div>
+
+				<!-- 技能 -->
+				<div class="skill">
+					<div class="skil-title">
+						<h2>Skills</h2>
+					</div>
+					<div class="skill-item">
+						<h6>HTML</h6>
+						<div class="schedule-content">
+							<div class="schedule"></div>
+							<div
+								class="schedule-index skillbar"
+								style="--percentage: 70%; --bg: linear-gradient(to right, #075fe3, #009cff, #00c9ec, #00eb8f, #b0ff00)"
+							>70%</div>
+						</div>
+						<h6>CSS</h6>
+						<div class="schedule-content">
+							<div class="schedule"></div>
+							<div
+								class="schedule-index skillbar"
+								style="--percentage: 60%; --bg: linear-gradient(to right, #f46f9e, #db5cab, #b652b9, #8150c5, #0051cd)"
+							>60%</div>
+						</div>
+						<h6>JavaScript</h6>
+						<div class="schedule-content">
+							<div class="schedule"></div>
+							<div
+								class="schedule-index skillbar"
+								style="--percentage: 75%; --bg: linear-gradient(to right, #fb490b, #bd9200, #75b83e, #00cda1, #0cd8eb)"
+							>75%</div>
+						</div>
+						<h6>PHP</h6>
+						<div class="schedule-content">
+							<div class="schedule"></div>
+							<div
+								class="schedule-index skillbar"
+								style="--percentage: 60%; --bg: linear-gradient(to right, #fb0bfb, #cf3ef2, #a64de4, #8054d1, #6154b9)"
+							>60%</div>
+						</div>
+						<h6>MySQL</h6>
+						<div class="schedule-content">
+							<div class="schedule"></div>
+							<div
+								class="schedule-index skillbar"
+								style="--percentage: 80%; --bg: linear-gradient(to right, #0b9efb, #459bff, #6697ff, #8292ff, #9b8cff)"
+							>80%</div>
+						</div>
+					</div>
+				</div>
+				<!-- 經歷 -->
+				<div class="experience">
+					<div class="title">
+						<h2>Experience</h2>
+					</div>
+					<div class="experience-total">
+						<div class="item">
+							<div class="date">2020/11-present</div>
+							<div class="company-logo">米諾克國際釣具股份有限公司</div>
+							<div class="company-position">維修專員</div>
+						</div>
+						<div class="item">
+							<div class="date">2020/4-2020/11</div>
+							<div class="company-logo">吉康食品股份有限公司</div>
+							<div class="company-position">通路企劃</div>
+						</div>
+						<div class="item">
+							<div class="date">2019/3-2020/03</div>
+							<div class="company-logo">寶熊漁具股份有限公司</div>
+							<div class="company-position">活動專員</div>
+						</div>
+						<div class="item">
+							<div class="date">2016/11-2019/01</div>
+							<div class="company-logo">天地蘊品牌規畫公司</div>
+							<div class="company-position">專案執行</div>
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+		</section>
+		<!-- SECTION 作品集 -->
+		<section id="Portfolio">
+			<h2 class="section-title">Portfolio</h2>
+			<div class="container">
+				<div class="card">
+					<div class="side">
+						<img
+							src="./img/flowers1.jpg"
+							alt="大阪城"
+						/>
+					</div>
+					<div class="side back">Project 1</div>
+				</div>
+				<div class="card">
+					<div class="side back">Project 2</div>
+					<div class="side">
+						<img
+							class="fit"
+							src="./img/japan.jpg"
+							alt="大阪城"
+						/>
+					</div>
+				</div>
+				<div class="card">
+					<div class="side">
+						<img
+							src="./img/pancake.jpg"
+							alt="大阪城"
+						/>
+					</div>
+					<div class="side back">Project 3</div>
+				</div>
+				<div class="card">
+					<div class="side">
+						<img
+							src="./img/japan2.jpg"
+							alt="大阪城"
+						/>
+					</div>
+					<div class="side back">Project 4</div>
+				</div>
+				<div class="card">
+					<div class="side">
+						<img
+							src="./img/photo2.jpg"
+							alt="大阪城"
+						/>
+					</div>
+					<div class="side back">Project 5</div>
+				</div>
+				<div class="card">
+					<div class="side">
+						<img
+							src="./img/sea.jpg"
+							alt="大阪城"
+						/>
+					</div>
+					<div class="side back">Project 6</div>
+				</div>
+				<div class="card">
+					<div class="side">
+						<img
+							src="./img/people2.jpg"
+							alt="大阪城"
+						/>
+					</div>
+					<div class="side back">Project 7</div>
+				</div>
+				<div class="card">
+					<div class="side">
+						<img
+							src="./img/strawberry.jpg"
+							alt="大阪城"
+						/>
+					</div>
+					<div class="side back">Project 8</div>
+				</div>
+				<div class="card">
+					<div class="side">
+						<img
+							src="./img/photo3.jpg"
+							alt="大阪城"
+						/>
+					</div>
+					<div class="side back">Project 9</div>
+				</div>
+				<div class="card">
+					<div class="side">
+						<img
+							src="./img/food2.jpg"
+							alt="大阪城"
+						/>
+					</div>
+					<div class="side back">Project 10</div>
+				</div>
+			</div>
+		</section>
+
+		<!--SECTION contact us -->
+		<section id="contactUs">
+			<div class="contactUs-total">
+				<div class="content">
+					<h2>Contact Us</h2>
+					<p>如有任何問題或疑問，歡迎隨時連絡我。</p>
+					<ul>
+						<li class="inf"><i class="fa-solid fa-location-dot"></i>
+							<p>嘉義縣大林鎮平林里民族路</p>
+						</li>
+						<li class="inf"><i class="fa-solid fa-phone"></i>
+							<p>0911211121</p>
+						</li>
+						<li class="inf"><i class="fa-solid fa-envelope"></i>
+							<p>dc951236@gmail.com</p>
+						</li>
+					</ul>
+
+				</div>
+				<form class="contact-from">
+					<div class="mb-3">
+						<label
+							for="name"
+							class="form-label"
+						>姓名</label>
+						<input
+							type=""
+							class="form-control"
+							id="name"
+							aria-describedby="emailHelp"
+						>
+					</div>
+
+					<div class="mb-3">
+						<label
+							for="email"
+							class="form-label"
+						>Email</label>
+						<input
+							type="email"
+							class="form-control"
+							id="email"
+						>
+					</div>
+					<div class="mb-3">
+						<label
+							for="phone"
+							class="form-label"
+						>電話</label>
+						<input
+							type="tel"
+							class="form-control"
+							id="phone"
+						>
+					</div>
+					<div class="mb-3">
+						<label
+							for="mes"
+							class="form-label"
+						>訊息</label>
+						<textarea
+							id="mes"
+							class="form-control"
+							name="mes"
+							cols="10"
+							rows="10"
+						></textarea>
+					</div>
+
+					<button
+						type="button"
+						class="btn btn-primary"
+					>確定送出</button>
+				</form>
+			</div>
+
+		</section>
+	</div>
+	<footer>Copyright@Copyright MacroViz.com</footer>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+	<script>
+		const NavListEl = document.querySelector(".nav-list");
+		const NavListIconEl = document.querySelector(".nav-list-icon");
+		NavListIconEl.addEventListener("click", function () {
+			if (NavListEl.style.display === "none" || NavListEl.style.display === "") {
+				NavListEl.style.display = "block";
+			} else {
+				NavListEl.style.display = "none";
+			}
+		});
+
+		const scrollDownEl = document.querySelector('.scrollDown')
+		window.addEventListener('scroll', () => {
+			scrollDownEl.style.visibility = window.scrollY >= 100 ? 'hidden' : 'visible';
+		});
+
+		// NOTE 畫面移動到該處才執行動畫
+		const [skill] = document.getElementsByClassName('skill');
+		window.addEventListener('scroll', () => {
+			if (window.scrollY + window.screen.height / 2 < skill.offsetTop) return;
+
+			skill.classList.add('skill-animated');
+		});
+	</script>
+</body>
+
+</html>
