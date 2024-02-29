@@ -327,10 +327,6 @@ h2 {
 
 	.skill-animated & {
 		animation: progress 1s linear forwards;
-		-webkit-animation-name: progress;
-		-webkit-animation-duration: 1s;
-		-webkit-animation-timing-function: linear;
-		-webkit-animation-fill-mode: forwards;
 	}
 }
 
