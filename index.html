@@ -410,17 +410,11 @@
 
 		// NOTE 畫面移動到該處才執行動畫
 		const [skill] = document.getElementsByClassName('skill');
-		window.onscroll = () => {
-			console.log('Scroll event triggered!');
-			const scrollPosition = window.scrollY || document.documentElement.scrollTop || window.pageYOffset;
-
-			console.log('Scroll Position:', scrollPosition);
-			console.log('Skill OffsetTop:', skill.offsetTop);
-
-			if (scrollPosition + window.innerHeight / 2 < skill.offsetTop) return;
+		window.addEventListener('scroll', () => {
+			if (window.scrollY + window.screen.height / 2 < skill.offsetTop) return;
 
 			skill.classList.add('skill-animated');
-		};
+		});
 	</script>
 </body>
 
