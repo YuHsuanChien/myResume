@@ -324,10 +324,7 @@ h2 {
 
 .skillbar {
 	background-image: var(--bg);
-
-	.skill-animated & {
-		animation: progress 1s linear forwards;
-	}
+	animation: progress 1s linear forwards;
 }
 
 @keyframes progress {
