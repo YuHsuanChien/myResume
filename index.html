@@ -410,16 +410,14 @@
 
 		// NOTE 畫面移動到該處才執行動畫
 		const [skill] = document.getElementsByClassName('skill');
+		window.addEventListener('scroll', () => {
+			if (window.scrollY + window.screen.height / 2 < skill.offsetTop) return;
 
-		function handleScroll() {
-			const scrollPosition = window.scrollY || document.documentElement.scrollTop || window.pageYOffset;
-			if (scrollPosition + window.screen.height / 2 < skill.offsetTop) return;
 			skill.classList.add('skill-animated');
-		}
-		// 使用scroll事件
+		});
+
 		window.addEventListener('scroll', handleScroll);
-		// 使用touchmove事件
-		window.addEventListener('touchmove', handleScroll);
+		
 
 	</script>
 </body>
