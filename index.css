@@ -322,14 +322,24 @@ h2 {
 	overflow: hidden;
 }
 
-.skillbar {
+/* .skillbar {
 	background-image: var(--bg);
 
 	.skill-animated & {
 		animation: progress 1s linear forwards;
 	}
 }
+上述等於 */
+/* --------------------- */
+.skillbar {
+	background-image: var(--bg);
+}
 
+.skill-animated .skillbar {
+	animation: progress 1s linear forwards;
+}
+
+/* -------------------- */
 @keyframes progress {
 	from {
 		width: 0%;
