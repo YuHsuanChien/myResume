@@ -33,6 +33,7 @@ p {
 
 /*SECTION 全域 */
 body {
+	max-weight:75rem;
 	background-color: #353353;
 	scroll-behavior: unset !important;
 }

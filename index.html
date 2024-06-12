@@ -23,6 +23,7 @@
 		rel="stylesheet"
 		href="./index.css"
 	/>
+
 </head>
 
 <body
@@ -118,19 +119,25 @@
 				<div class="educational-background">
 					<h2>E-B</h2>
 					<div class="item">
+						<div class="title">綜合高中</div>
+						<div class="ps">
+							<p>國立華南高級商業學校 | 2011-2014</p>
+						</div>
+					</div>
+
+					<div class="item">
 						<div class="title">企業管理系學士學位</div>
 						<div class="ps">
 							<p class="school">國立屏東科技大學 | 2014-2018</p>
 						</div>
-
 					</div>
 					<div class="item">
-						<div class="title">商業服務系</div>
+						<div class="title">前端工程師養成班</div>
 						<div class="ps">
-							<p>國立華南高級商業職業學校 | 2011-2014</p>
+							<p class="school">資展國際 | 2023-2024</p>
 						</div>
-
 					</div>
+
 				</div>
 
 				<!-- 技能 -->
@@ -144,23 +151,23 @@
 							<div class="schedule"></div>
 							<div
 								class="schedule-index skillbar"
-								style="--percentage: 70%; --bg: linear-gradient(to right, #075fe3, #009cff, #00c9ec, #00eb8f, #b0ff00)"
-							>70%</div>
+								style="--percentage: 80%; --bg: linear-gradient(to right, #075fe3, #009cff, #00c9ec, #00eb8f, #b0ff00)"
+							>80%</div>
 						</div>
 						<h6>CSS</h6>
 						<div class="schedule-content">
 							<div class="schedule"></div>
 							<div
 								class="schedule-index skillbar"
-								style="--percentage: 60%; --bg: linear-gradient(to right, #f46f9e, #db5cab, #b652b9, #8150c5, #0051cd)"
-							>60%</div>
+								style="--percentage: 80%; --bg: linear-gradient(to right, #f46f9e, #db5cab, #b652b9, #8150c5, #0051cd)"
+							>80%</div>
 						</div>
 						<h6>JavaScript</h6>
 						<div class="schedule-content">
 							<div class="schedule"></div>
 							<div
 								class="schedule-index skillbar"
-								style="--percentage: 75%; --bg: linear-gradient(to right, #fb490b, #bd9200, #75b83e, #00cda1, #0cd8eb)"
+								style="--percentage: 75%; --bg: linear-gradient(to right,#D65DB1, #FF6F91, #FF9671, #FFC75F, #F9F871)"
 							>75%</div>
 						</div>
 						<h6>PHP</h6>
@@ -178,6 +185,30 @@
 								class="schedule-index skillbar"
 								style="--percentage: 80%; --bg: linear-gradient(to right, #0b9efb, #459bff, #6697ff, #8292ff, #9b8cff)"
 							>80%</div>
+						</div>
+						<h6>Figma</h6>
+						<div class="schedule-content">
+							<div class="schedule"></div>
+							<div
+								class="schedule-index skillbar"
+								style="--percentage: 60%; --bg: linear-gradient(to right, #FB1010, #FF0077, #CE24D0, #006BFF, #0086FF)"
+							>60%</div>
+						</div>
+						<h6>Node.js</h6>
+						<div class="schedule-content">
+							<div class="schedule"></div>
+							<div
+								class="schedule-index skillbar"
+								style="--percentage: 70%; --bg: linear-gradient(to right, #0D17AD, #0054E0, #007DF6, #00A1F0, #00C2D6)"
+							>70%</div>
+						</div>
+						<h6>React.js</h6>
+						<div class="schedule-content">
+							<div class="schedule"></div>
+							<div
+								class="schedule-index skillbar"
+								style="--percentage: 70%; --bg: linear-gradient(to right, #EE1B93, #B250D3, #0074F4, #0086EB, #008ABE)"
+							>70%</div>
 						</div>
 					</div>
 				</div>
@@ -403,7 +434,7 @@
 			}
 		});
 
-		const scrollDownEl = document.querySelector('.scrollDown')
+		const scrollDownEl = document.querySelector('.scrollDown');
 		window.addEventListener('scroll', () => {
 			scrollDownEl.style.visibility = window.scrollY >= 100 ? 'hidden' : 'visible';
 		});
