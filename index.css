@@ -29,21 +29,9 @@ p {
 	padding: 0;
 }
 
-.section-container {
-	width: 100%;
-	margin: 30px auto;
-}
-
-.container {
-	margin: 30px auto;
-	width: 100%;
-	display: flex;
-}
-
 /*SECTION 全域 */
 body {
-	max-weight: 75rem;
-	background-color: #353353;
+	/* background-color: #353353; */
 	scroll-behavior: unset !important;
 }
 
@@ -60,6 +48,8 @@ body {
 	z-index: 2;
 	background-image: linear-gradient(to right top, #302f4d, #332647, #371c3f, #3b0f35, #3d0028);
 	box-shadow: 1px 1px 15px 2px black;
+	left: 0;
+	top: 0;
 }
 
 #navbar > .logo > a {
@@ -127,8 +117,10 @@ h2 {
 
 /*SECTION banner */
 #Banner {
-	margin-top: 100px;
+	height: 100svh;
+	padding-top: 100px;
 	margin-bottom: 400px;
+	background-color: #4e519e;
 }
 
 #Banner > .section-container {
@@ -185,7 +177,7 @@ h2 {
 }
 
 .scrollDown {
-	margin-top: 150px;
+	margin-top: 20px;
 }
 
 .scrollDown p {
@@ -488,7 +480,7 @@ h2 {
 	width: 100%;
 	display: flex;
 	margin: 30px auto;
-	margin-bottom: 0px;
+	margin-bottom: 0;
 	justify-content: center;
 	background-image: linear-gradient(to right top, #a6a2f8, #8886d9, #6b6bbb, #4e519e, #303882);
 	padding: 100px 0;
@@ -542,11 +534,15 @@ h2 {
 }
 
 footer {
+	width: 100%;
 	background-color: black;
 	text-align: center;
 	color: white;
 	opacity: 0.5;
 	font-size: .75rem;
+	position: absolute;
+	left: 0;
+	margin-top: auto;
 }
 
 textarea {
@@ -601,27 +597,45 @@ textarea {
 
 	/* SECTION 平板About me區塊 */
 	#AboutMe .my-photo {
+		overflow: visible;
 		width: 30%;
 		height: auto;
 		margin: 0;
 		border-radius: unset;
-		translate: -50px -80px;
+		translate: -50px -50px;
 		transition: all 0.3s ease-in-out;
+		position: relative;
 	}
 
 	#AboutMe .my-photo:hover {
 		translate: 0px 0px;
-		border: 10px solid white;
+	}
+
+	#AboutMe .my-photo:hover .borderSlide {
+		left: 0;
+		top: 0;
 	}
 
 	#AboutMe .my-photo img:hover {
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
-}
-
+		box-shadow: 3px 3px 5px rgba(0, 0, 0, 0);
+	}
 
 	#AboutMe .my-photo > img {
 		width: 100%;
 		margin: 0;
+		position: relative;
+		z-index: 5;
+	}
+
+	.borderSlide {
+		left: 40px;
+		top: 100px;
+		border: 10px solid rgb(131, 43, 168);
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		z-index: 1;
+		transition: all 0.3s ease-in-out;
 	}
 
 	#AboutMe > .AboutMe-pic-item > .AboutMe-item {
@@ -740,23 +754,19 @@ textarea {
 
 	/* SECTION 電腦AboutMe區塊 */
 	#AboutMe > .AboutMe-pic-item {
-		width: 60%;
+		max-width: 1200px;
 		margin: auto;
-	}
-
-	#AboutMe > .AboutMe-pic-item > .AboutMe-item {
-		width: 60%;
 	}
 
 	/* SECTION 電腦E-B區塊 */
 	.educational-background {
-		width: 50%;
+		max-width: 1200px;
 		margin: 200px auto;
 	}
 
 	/* SECTION 電腦E-B區塊 */
 	#AboutMe .content > .skill {
-		width: 50%;
+		max-width: 1200px;
 		margin: 200px auto;
 	}
 
@@ -770,20 +780,17 @@ textarea {
 
 	/* SECTION 電腦Experience區塊 */
 	.experience {
-		width: 50%;
+		max-width: 1200px;
 		margin: 200px auto;
 	}
 
 	/* SECTION 電腦Portfolio區塊 */
 	#Portfolio {
-		width: 70%;
 		padding-left: 30px;
 		padding-right: 30px;
 		margin: 200px auto;
 	}
 
 	/* SECTION 電腦contact us區塊 */
-	#contactUs > .contactUs-total {
-		width: 65%;
-	}
+	#contactUs > .contactUs-total {}
 }
