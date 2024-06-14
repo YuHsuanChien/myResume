@@ -101,6 +101,17 @@ ul {
 	padding: 0;
 }
 
+.textShadow {
+	text-shadow: 1px 1px 2px black;
+}
+
+.text {
+	text-transform: uppercase;
+	background: linear-gradient(to right, #adacea 0%, #330867 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
 .nav-list {
 	display: none;
 }
@@ -121,6 +132,9 @@ h2 {
 	padding-top: 100px;
 	margin-bottom: 400px;
 	background-color: #4e519e;
+	clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);
+	background-image: url(./img/pexels-pok-rie-33563-1139962.jpg);
+	background-size: cover;
 }
 
 #Banner > .section-container {
@@ -138,6 +152,7 @@ h2 {
 
 .Banner-photo > img {
 	width: 40%;
+	max-width: 300px;
 }
 
 #Banner .description {
@@ -177,7 +192,7 @@ h2 {
 }
 
 .scrollDown {
-	margin-top: 20px;
+	margin-top: 30px;
 }
 
 .scrollDown p {
@@ -593,6 +608,10 @@ textarea {
 
 	#Banner .social {
 		width: 20%;
+	}
+
+	.scrollDown {
+		margin-top: 50px;
 	}
 
 	/* SECTION 平板About me區塊 */
