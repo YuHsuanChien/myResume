@@ -29,6 +29,14 @@ p {
 	padding: 0;
 }
 
+.fs10 {
+	font-size: 14px;
+	text-align: center;
+	line-height: auto;
+	color:rgb(84, 133, 189);
+	font-weight: 500;
+}
+
 /*SECTION 全域 */
 body {
 	/* background-color: #353353; */
@@ -253,7 +261,6 @@ h2 {
 
 #AboutMe > .AboutMe-pic-item {
 	width: 100%;
-	padding-top: 50px;
 }
 
 #AboutMe > .AboutMe-pic-item > .AboutMe-item {
