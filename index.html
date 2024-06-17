@@ -106,6 +106,10 @@
 			class="section-container"
 			id="AboutMe"
 		>
+			<h2
+				class="text"
+				style="margin: auto;"
+			>ABOUT ME</h2>
 			<div class="AboutMe-pic-item">
 				<div class="my-photo">
 					<img
@@ -115,15 +119,19 @@
 					<div class="borderSlide"></div>
 				</div>
 				<div class="AboutMe-item">
-					<h2 class="text">完善每個作品<br>是我的原則</h2>
-					<div class="description">我來自嘉義，目前預備前端工程師，之前在外工作時就曾參與網頁製作，也曾經為自家水果使用wordpress架過一個能夠購物的網站，來到資展學習後對前端網站有了深入的體會，目前擅長HTML、CSS、JS、bootstrap</div>
+					<h2 class="text ">完善每個作品<br>是我的原則</h2>
+					<div class="description">曾參與過開發線上教學平台專案，使用React框架搭配tailwind編寫擁有完善RWD的線上學習平台，負責部分為會員專區的整個版面元件tabbar、sidebar、headerbar、課程總覽、收藏清單、收藏文章、教師課程上傳等網頁功能，除基本的動態資料篩選呈現功能以外，也能夠實現檔案拖曳上傳，以及上傳圖片、影片的預覽、上傳檔案的進度條追蹤。
+					<br />
+					<br />
+					資料庫則使用MySQL、SQLite，實現線上課程的增刪修功能，並且使用PHP、HTML、CSS、Javascript獨立完成專題網站中部落格文章管理的後台功能，並能夠使用 Git 做好版本控制。
+					</div>
 				</div>
 			</div>
 
 			<div class="content">
 				<!-- 學歷 -->
 				<div class="educational-background">
-					<h2>E-B</h2>
+					<h2 class="text">E-B</h2>
 					<div class="item">
 						<div class="title">綜合高中</div>
 						<div class="ps">
@@ -147,7 +155,7 @@
 				</div>
 
 				<!-- 技能 -->
-				<div class="skill">
+				<div class="skill text">
 					<div class="skil-title">
 						<h2>Skills</h2>
 					</div>
@@ -221,7 +229,7 @@
 				<!-- 經歷 -->
 				<div class="experience">
 					<div class="title">
-						<h2>Experience</h2>
+						<h2 class="text">Experience</h2>
 					</div>
 					<div class="experience-total">
 						<div class="item">
@@ -252,7 +260,7 @@
 		</section>
 		<!-- SECTION 作品集 -->
 		<section id="Portfolio">
-			<h2 class="section-title">Portfolio</h2>
+			<h2 class="section-title text">Portfolio</h2>
 			<div class="container">
 				<div class="card">
 					<div class="side">
@@ -432,13 +440,22 @@
 	<script>
 		const NavListEl = document.querySelector(".nav-list");
 		const NavListIconEl = document.querySelector(".nav-list-icon");
-		NavListIconEl.addEventListener("click", function () {
+		NavListIconEl.addEventListener("click", function (e) {
+			e.stopPropagation();
 			if (NavListEl.style.display === "none" || NavListEl.style.display === "") {
 				NavListEl.style.display = "block";
 			} else {
 				NavListEl.style.display = "none";
 			}
 		});
+
+
+		document.addEventListener("click", (e) => {
+			if (NavListEl.style.display === "block" && e.target !== NavListEl && e.target !== NavListIconEl) {
+				NavListEl.style.display = "none";
+			}
+		});
+
 
 		const scrollDownEl = document.querySelector('.scrollDown');
 		window.addEventListener('scroll', () => {

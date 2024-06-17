@@ -123,14 +123,13 @@ h2 {
 	margin: 20px auto;
 	text-align: center;
 	letter-spacing: 2px;
-	color: white;
 }
 
 /*SECTION banner */
 #Banner {
 	height: 100svh;
 	padding-top: 100px;
-	margin-bottom: 400px;
+	margin-bottom: 50px;
 	background-color: #4e519e;
 	clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);
 	background-image: url(./img/pexels-pok-rie-33563-1139962.jpg);
@@ -254,6 +253,7 @@ h2 {
 
 #AboutMe > .AboutMe-pic-item {
 	width: 100%;
+	padding-top: 50px;
 }
 
 #AboutMe > .AboutMe-pic-item > .AboutMe-item {
@@ -269,7 +269,7 @@ h2 {
 	padding: 15px;
 	background-color: #b1c9d3;
 	border-radius: 20px;
-	margin: 30px auto;
+	margin: 20px auto;
 	letter-spacing: 2px;
 	color: white;
 }
@@ -602,6 +602,10 @@ textarea {
 	}
 
 	/* SECTION 平板banner區塊 */
+	#Banner {
+		margin-bottom: 100px;
+	}
+
 	.Banner-photo > img {
 		width: 30%;
 	}
@@ -615,6 +619,11 @@ textarea {
 	}
 
 	/* SECTION 平板About me區塊 */
+	#AboutMe > .AboutMe-pic-item {
+		width: 100%;
+		padding-top: 100px;
+	}
+
 	#AboutMe .my-photo {
 		overflow: visible;
 		width: 30%;
@@ -658,7 +667,7 @@ textarea {
 	}
 
 	#AboutMe > .AboutMe-pic-item > .AboutMe-item {
-		width: 40%;
+		width: 60%;
 	}
 
 	#AboutMe > .AboutMe-pic-item {
