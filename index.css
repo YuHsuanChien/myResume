@@ -146,7 +146,7 @@ h2 {
 	padding-top: 100px;
 	margin-bottom: 50px;
 	background-color: #4e519e;
-	clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);
+	clip-path: polygon(0 0, 100% 0%, 100% 95%, 0% 100%);
 	background-image: url(./img/pexels-pok-rie-33563-1139962.jpg);
 	background-size: cover;
 }
@@ -295,8 +295,13 @@ h2 {
 
 /*SECTION 學歷 */
 .educational-background {
-	width: 90%;
-	margin: 100px auto;
+	padding: 150px 0;
+	margin-bottom: 50px;
+	background-color: #4e519e;
+	clip-path: polygon(0 5%, 100% 0%, 100% 95%, 0% 100%);
+	background-image: url(./img/pexels-pok-rie-33563-1139962.jpg);
+	background-size: cover;
+	border-image: fill 0 linear-gradient(rgba(12, 118, 238, 0.471), #64a8b3);
 }
 
 .educational-background > .item {
@@ -456,6 +461,10 @@ h2 {
 	will-change: transform;
 }
 
+.educational-background {
+	margin: 200px auto;
+}
+
 .educational-background > .container .img1:hover {
 	content: url("./img/reward.jpg");
 }
@@ -468,11 +477,9 @@ h2 {
 	content: url("./img/HURW.png");
 }
 
-
 /* .card:hover {
 	transform: rotateY(180deg);
 } */
-
 .side {
 	width: 100%;
 	height: 100%;
@@ -715,6 +722,7 @@ textarea {
 	/* SECTION 平板E-B區塊 */
 	.educational-background {
 		width: 80%;
+		margin: 200px auto;
 	}
 
 	/* SECTION 平板Skills區塊 */
@@ -815,7 +823,7 @@ textarea {
 
 	/* SECTION 電腦E-B區塊 */
 	.educational-background {
-		max-width: 1200px;
+		width: 100%;
 		margin: 200px auto;
 	}
 
