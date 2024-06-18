@@ -33,7 +33,7 @@ p {
 	font-size: 14px;
 	text-align: center;
 	line-height: auto;
-	color:rgb(84, 133, 189);
+	color: rgb(84, 133, 189);
 	font-weight: 500;
 }
 
@@ -115,9 +115,16 @@ ul {
 
 .text {
 	text-transform: uppercase;
-	background: linear-gradient(to right, #adacea 0%, #5d6588 100%);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+	background: linear-gradient(to right, #adacea 0%, #444e7c 50%, #adacea 100%);
+	background-clip: text;
+	color: transparent;
+	animation: animated 5s linear infinite;
+}
+
+@keyframes animated {
+	to {
+		background-position-x: 200px
+	}
 }
 
 .nav-list {
@@ -128,7 +135,7 @@ h2 {
 	width: 80%;
 	line-height: 35px;
 	font-weight: 700;
-	margin: 20px auto;
+	margin: auto;
 	text-align: center;
 	letter-spacing: 2px;
 }
@@ -449,9 +456,22 @@ h2 {
 	will-change: transform;
 }
 
-.card:hover {
-	transform: rotateY(180deg);
+.educational-background > .container .img1:hover {
+	content: url("./img/reward.jpg");
 }
+
+.educational-background > .container .img2:hover {
+	content: url("./img/NPUST_RW.jpg");
+}
+
+.educational-background > .container .img3:hover {
+	content: url("./img/HURW.png");
+}
+
+
+/* .card:hover {
+	transform: rotateY(180deg);
+} */
 
 .side {
 	width: 100%;
