@@ -82,7 +82,7 @@
 				<div class="Banner-photo">
 					<img src="./img/avataaars.png" />
 				</div>
-				<div class="description">
+				<div class="description show">
 					<p class="animate__animated animate__fadeInLeft textShadow">Jackall</p>
 					<p class="animate__animated animate__fadeInRight textShadow">I'm a Front-end engineer</p>
 				</div>
@@ -107,7 +107,7 @@
 			id="AboutMe"
 		>
 			<h2 class="text my-5">ABOUT ME</h2>
-			<div class="AboutMe-pic-item">
+			<div class="AboutMe-pic-item leftMove animate__animated">
 				<div class="my-photo">
 					<img
 						src="./img/user.jpg"
@@ -117,7 +117,7 @@
 				</div>
 				<div class="AboutMe-item">
 					<h3 class="text text-center fw-bold mt-3 mt-md-0">完善每個作品<br>是我的原則</h3>
-					<div class="description">曾參與過開發線上教學平台專案，使用React框架搭配tailwind編寫擁有完善RWD的線上學習平台，負責部分為會員專區的整個版面元件tabbar、sidebar、headerbar、課程總覽、收藏清單、收藏文章、教師課程上傳等網頁功能，除基本的動態資料篩選呈現功能以外，也能夠實現檔案拖曳上傳，以及上傳圖片、影片的預覽、上傳檔案的進度條追蹤。
+					<div class="description boxShadow">曾參與過開發線上教學平台專案，使用React框架搭配tailwind編寫擁有完善RWD的線上學習平台，負責部分為會員專區的整個版面元件tabbar、sidebar、headerbar、課程總覽、收藏清單、收藏文章、教師課程上傳等網頁功能，除基本的動態資料篩選呈現功能以外，也能夠實現檔案拖曳上傳，以及上傳圖片、影片的預覽、上傳檔案的進度條追蹤。
 						<br />
 						<br />
 						資料庫則使用MySQL、SQLite，實現線上課程的增刪修功能，並且使用PHP、HTML、CSS、Javascript獨立完成專題網站中部落格文章管理的後台功能，並能夠使用 Git 做好版本控制。
@@ -139,11 +139,13 @@
 				<div class="educational-background">
 
 					<!-- 教育經歷 -->
-					<div class="container mt-5">
+					<div class="container">
 						<div class="row  text-center">
-							<div class="py-2 col-12 col-md-4">
+							<h2 class="mx-suto mb-5">E-B</h2>
+							<div class="py-2 col-12 col-md-4 topMove animate__animated">
+
 								<div
-									class="card"
+									class="card boxShadow"
 									style="width: 100%;"
 								>
 									<img
@@ -154,14 +156,14 @@
 									<div class="card-body bg-black bg-opacity-50 rounded-bottom fs-6 fs-md-4 fs-lg-3">
 										<div class="title fw-bolder text-light">資展國際</div>
 										<div class="ps">
-											<p class="school fw-bolder text-light">前端工程師養成班<br/>2023-2024</p>
+											<p class="school fw-bolder text-light">前端工程師養成班<br />2023-2024</p>
 										</div>
 									</div>
 								</div>
 							</div>
-							<div class="py-2 col-12 col-sm-6 col-md-4">
+							<div class="py-2 col-12 col-sm-6 col-md-4  topMove animate__animated">
 								<div
-									class="card"
+									class="card boxShadow"
 									style="width: 100%;"
 								>
 									<img
@@ -177,9 +179,9 @@
 									</div>
 								</div>
 							</div>
-							<div class="py-2 col-12 col-sm-6 col-md-4">
+							<div class="py-2 col-12 col-sm-6 col-md-4  topMove animate__animated">
 								<div
-									class="card"
+									class="card boxShadow"
 									style="width: 100%;"
 								>
 									<img
@@ -515,6 +517,34 @@
 			skill.classList.add('skill-animated');
 		});
 
+		const leftMoveEl = document.querySelector(".leftMove");
+		window.addEventListener("scroll", () => {
+			if (window.scrollY + window.innerHeight < leftMoveEl.offsetTop) {
+				leftMoveEl.style.visibility = "hidden";
+				leftMoveEl.classList.remove('animate__fadeInRight');
+			} else {
+				leftMoveEl.style.visibility = "visible";
+				leftMoveEl.classList.add('animate__fadeInRight');
+			}
+
+			const topMoveEl = document.getElementsByClassName('topMove');
+			//getElementsByClassName返回的不是一個真的陣列，得把他轉成陣列
+			const topMoveArray = Array.from(topMoveEl);
+
+			topMoveArray.forEach((v, i, arr) => {
+				window.addEventListener('scroll', () => {
+					if (window.scrollY + window.innerHeight < v.offsetTop) {
+						v.style.visibility = "hidden";
+						v.classList.remove('animate__fadeInUp');
+					} else {
+						v.style.visibility = "visible";
+						v.classList.add('animate__fadeInUp');
+					}
+				});
+
+			});
+
+		})
 
 	</script>
 </body>
