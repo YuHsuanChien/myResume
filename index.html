@@ -201,6 +201,38 @@
 					</div>
 				</div>
 
+				<div class="container py-5 text-black numberAnimation">
+					<div class="row justify-content-center text-center gap-2 gap-md-0">
+						<div class="col-12">
+							<h1 class="pb-3 h5">Number counter animation <br> in pure JavaScript <br> (requestAnimationFrame) </h1>
+						</div>
+						<div class="col-5 col-md-3">
+							<span
+								id="count1"
+								class="display-4"
+							></span>
+						</div>
+						<div class="col-5 col-md-3">
+							<span
+								id="count2"
+								class="display-4"
+							></span>
+						</div>
+						<div class="col-5 col-md-3">
+							<span
+								id="count3"
+								class="display-4"
+							></span>
+						</div>
+						<div class="col-5 col-md-3">
+							<span
+								id="count4"
+								class="display-4"
+							></span>
+						</div>
+					</div>
+				</div>
+
 				<!-- 技能 -->
 				<div class="skill">
 					<div class="skil-title">
@@ -544,7 +576,38 @@
 
 			});
 
-		})
+		});
+
+		// 數字跳動計算
+		document.addEventListener('DOMContentLoaded', () => {
+			const numberAnimationEl = document.querySelector('.numberAnimation');
+
+			const numberAnimation = (selector, start = 0, end, duration, other) => {
+				const target = document.querySelector(selector);
+				console.log(target);
+
+				let startTimeStamp = null;
+				const step = (timeStamp) => {
+					if (!startTimeStamp) { startTimeStamp = timeStamp; }
+					const progress = Math.min((timeStamp - startTimeStamp) / duration, 1);
+					target.innerText = "+" + Math.floor(progress * (end - start) + start) + other;
+					if (progress < 1) {
+						window.requestAnimationFrame(step);
+					}
+				};
+				window.requestAnimationFrame(step);
+			};
+			let result = false;
+			window.addEventListener('scroll', () => {
+				if (!result && (window.scrollY + window.innerHeight) >= numberAnimationEl.offsetTop) {
+					result = true;
+					numberAnimation("#count1", 10, 30, 1000, "hr");
+					numberAnimation("#count2", 8, 12, 1500,"");
+					numberAnimation("#count3", 1, 1222, 2000,"");
+					numberAnimation("#count4", 12, 153, 2500,"");
+				}
+			});
+		});
 
 	</script>
 </body>
