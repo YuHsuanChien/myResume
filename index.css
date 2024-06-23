@@ -113,6 +113,10 @@ ul {
 	padding: 0;
 }
 
+.textSpace {
+	letter-spacing: 1px;
+}
+
 .textShadow {
 	text-shadow: 1px 1px 2px black;
 }
@@ -131,6 +135,12 @@ ul {
 	}
 }
 
+.numberMoveText {
+	background: linear-gradient(to right, var(--colorfrom), var(--colorto));
+	background-clip: text;
+	color: transparent;
+}
+
 .nav-list {
 	display: none;
 }
@@ -140,7 +150,7 @@ ul {
 }
 
 .card:hover {
-	transform:translate(0, -15px) scale(1.02);
+	transform: translate(0, -15px) scale(1.02);
 }
 
 h2 {
